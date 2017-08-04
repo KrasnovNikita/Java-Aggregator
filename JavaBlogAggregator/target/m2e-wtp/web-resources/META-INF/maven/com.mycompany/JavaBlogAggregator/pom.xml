@@ -36,6 +36,8 @@
     
   <dependencies>
   
+  
+  
    <dependency>
         <groupId>org.springframework.data</groupId>
         <artifactId>spring-data-jpa</artifactId>
@@ -230,6 +232,13 @@
   		<artifactId>hsqldb</artifactId>
   		<version>2.4.0</version>
   	</dependency>
+  	
+  	<dependency>
+    <groupId>jstl</groupId>
+    <artifactId>jstl</artifactId>
+    <version>1.2</version>
+   </dependency>
+  	
   </dependencies>
   
 </project>
