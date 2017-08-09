@@ -5,34 +5,11 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   
-  
-  <build>
-  	<plugins>
-  		
-  		<plugin>
-  			<groupId>org.apache.maven.plugins</groupId>
-  			<artifactId>maven-compiler-plugin</artifactId>
-  			<version>3.1</version>
-  			<configuration>
-  			<source>1.6</source>
-  			<target>1.6</target>
-  			</configuration>
-  		</plugin>
-
-  		<plugin>
-  			<groupId>org.eclipse.jetty</groupId>
-  			<artifactId>jetty-maven-plugin</artifactId>
-  			<version>9.4.6.v20170531</version>
-  		</plugin>
-  	</plugins>
-
-  </build>
-  
   	<properties>
     <org.springframework.version>4.0.2.RELEASE</org.springframework.version>
     <apache.tiles>3.0.3</apache.tiles>
-   <spring.security.version>4.2.3.RELEASE</spring.security.version>
     </properties>
+
     
   <dependencies>
   
@@ -41,7 +18,7 @@
    <dependency>
         <groupId>org.springframework.data</groupId>
         <artifactId>spring-data-jpa</artifactId>
-        <version>1.11.4.RELEASE</version>
+        <version>1.5.1.RELEASE</version>
     </dependency>
     
     
@@ -219,18 +196,14 @@
   	<dependency>
   		<groupId>org.slf4j</groupId>
   		<artifactId>slf4j-log4j12</artifactId>
-  		<version>1.7.25</version>
+  		<version>1.7.6</version>
   	</dependency>
 
-  	<dependency>
-  		<groupId>org.hibernate</groupId>
-  		<artifactId>hibernate-entitymanager</artifactId>
-  		<version>5.2.10.Final</version>
-  	</dependency>
+  	
   	<dependency>
   		<groupId>org.hsqldb</groupId>
   		<artifactId>hsqldb</artifactId>
-  		<version>2.4.0</version>
+  		<version>2.3.2</version>
   	</dependency>
   	
   	<dependency>
@@ -240,20 +213,59 @@
    </dependency>
 
 
-       
-
 		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-web</artifactId>
-			<version>${spring.security.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-config</artifactId>
-			<version>${spring.security.version}</version>
-		</dependency>
-		
+	<groupId>org.springframework.security</groupId>
+	<artifactId>spring-security-web</artifactId>
+	<version>4.0.2.RELEASE</version>
+</dependency>
+<dependency>
+	<groupId>org.springframework.security</groupId>
+	<artifactId>spring-security-config</artifactId>
+	<version>4.0.2.RELEASE</version>
+</dependency>
 
 
+
+  	
+  	<dependency>
+  		<groupId>org.hibernate</groupId>
+  		<artifactId>hibernate-entitymanager</artifactId>
+  		<version>5.2.10.Final</version>
+  	</dependency>
   </dependencies>
+  
+
+  
+  <build>
+  <plugins>
+			
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					 <fork>true</fork>
+                    <executable>/usr/java/jdk1.8.0_121/bin/javac</executable>
+				</configuration>
+				
+				
+			</plugin>
+
+
+			<plugin>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>9.4.6.v20170531</version>
+			</plugin>
+			
+  </plugins>
+  </build>
+  
 </project>

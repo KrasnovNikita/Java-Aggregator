@@ -16,16 +16,16 @@ import ua.krasnovnikita.repository.BlogRepository;
 import ua.krasnovnikita.repository.ItemRepository;
 import ua.krasnovnikita.repository.UserRepository;
 
-@Service
 @Transactional
+@Service
 public class UserService {
-
-	@Autowired
-	private UserRepository userRepository;
 
 	@Autowired
 	private BlogRepository blogRepository;
 
+	@Autowired
+	private UserRepository userRepository;
+	
 	@Autowired
 	private ItemRepository itemRepository;
 
