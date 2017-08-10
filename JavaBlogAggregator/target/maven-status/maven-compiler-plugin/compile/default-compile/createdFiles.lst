@@ -1,12 +1,12 @@
 ua/krasnovnikita/repository/ItemRepository.class
+ua/krasnovnikita/entity/Item.class
+ua/krasnovnikita/service/InitDBService.class
+ua/krasnovnikita/entity/Role.class
+ua/krasnovnikita/repository/UserRepository.class
 ua/krasnovnikita/controller/IndexController.class
 ua/krasnovnikita/repository/RoleRepository.class
-ua/krasnovnikita/entity/Item.class
 ua/krasnovnikita/entity/Blog.class
 ua/krasnovnikita/entity/User.class
 ua/krasnovnikita/controller/UserController.class
 ua/krasnovnikita/service/UserService.class
-ua/krasnovnikita/service/InitDBService.class
 ua/krasnovnikita/repository/BlogRepository.class
-ua/krasnovnikita/entity/Role.class
-ua/krasnovnikita/repository/UserRepository.class
