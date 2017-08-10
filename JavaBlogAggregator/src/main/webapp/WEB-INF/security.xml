@@ -22,7 +22,7 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans
 		join role on user_role.roles_id = role.id
 		where user.name = ?"
 		
-		users-by-username-query="select name,password,1 from user where name = ?"/>
+		users-by-username-query="select name,password,enabled from user where name = ?"/>
 		
 	</authentication-provider>
 </authentication-manager>

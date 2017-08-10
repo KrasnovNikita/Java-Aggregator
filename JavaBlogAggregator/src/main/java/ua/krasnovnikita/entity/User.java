@@ -16,6 +16,8 @@ public class User {
 
 	private String name;
 
+	private boolean enabled;
+
 	private String email;
 
 	private String password;
@@ -71,6 +73,14 @@ public class User {
 
 	public void setId(Integer id) {
 		this.id = id;
+	}
+
+	public boolean isEnabled() {
+		return enabled;
+	}
+
+	public void setEnabled(boolean enabled) {
+		this.enabled = enabled;
 	}
 
 }
