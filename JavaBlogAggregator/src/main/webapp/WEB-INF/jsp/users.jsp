@@ -32,7 +32,7 @@ $(document).ready(function(){
       </a>
    </td>
    <td>
-   <a href='<spring:url value="/user/remove/${user.id}.html"></spring:url>' class="btn btn-danger triggerRemove">remove</a>
+   <a href='<spring:url value="/users/remove/${user.id}.html"></spring:url>' class="btn btn-danger triggerRemove">remove</a>
    </td>
    
    </tr>

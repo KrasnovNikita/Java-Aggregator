@@ -1,4 +1,6 @@
 /home/nikitakrasnov/git/Java-Aggregator/JavaBlogAggregator/src/main/java/ua/krasnovnikita/repository/BlogRepository.java
+/home/nikitakrasnov/git/Java-Aggregator/JavaBlogAggregator/src/main/java/ua/krasnovnikita/controller/AdminController.java
+/home/nikitakrasnov/git/Java-Aggregator/JavaBlogAggregator/src/main/java/ua/krasnovnikita/controller/RegisterController.java
 /home/nikitakrasnov/git/Java-Aggregator/JavaBlogAggregator/src/main/java/ua/krasnovnikita/entity/Blog.java
 /home/nikitakrasnov/git/Java-Aggregator/JavaBlogAggregator/src/main/java/ua/krasnovnikita/entity/Item.java
 /home/nikitakrasnov/git/Java-Aggregator/JavaBlogAggregator/src/main/java/ua/krasnovnikita/service/InitDBService.java
