@@ -25,6 +25,8 @@
 						<label for="name" class="col-sm-2 control-label">Name:</label>
 						<div class="col-sm-10">
 							<form:input path="name" cssClass="form-control" />
+							<form:errors path="name"></form:errors>
+							
 						</div>
 					</div>
 
@@ -32,6 +34,8 @@
 						<label for="url" class="col-sm-2 control-label">URL:</label>
 						<div class="col-sm-10">
 							<form:input path="url" cssClass="form-control" />
+							<form:errors path="url"></form:errors>
+							
 						</div>
 					</div>
 

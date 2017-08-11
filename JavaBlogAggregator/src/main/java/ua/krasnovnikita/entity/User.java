@@ -8,6 +8,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
+import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.Email;
 
 @Entity
 public class User {
@@ -15,12 +18,16 @@ public class User {
 	@GeneratedValue
 	private Integer id;
 
+	@Size(min = 3, message = "Name must be more than 3 characters!")
 	private String name;
 
 	private boolean enabled;
 
+	@Size(min = 1, message = "Invalid email address!")
+	@Email(message = "Invalid email address!")
 	private String email;
 
+	@Size(min = 5, message = "Password must be more than 5 characters!")
 	private String password;
 
 	@ManyToMany
