@@ -11,3 +11,4 @@
 /home/nikitakrasnov/git/Java-Aggregator/JavaBlogAggregator/src/main/java/ua/krasnovnikita/repository/UserRepository.java
 /home/nikitakrasnov/git/Java-Aggregator/JavaBlogAggregator/src/main/java/ua/krasnovnikita/controller/UserController.java
 /home/nikitakrasnov/git/Java-Aggregator/JavaBlogAggregator/src/main/java/ua/krasnovnikita/entity/Role.java
+/home/nikitakrasnov/git/Java-Aggregator/JavaBlogAggregator/src/main/java/ua/krasnovnikita/service/BlogService.java
