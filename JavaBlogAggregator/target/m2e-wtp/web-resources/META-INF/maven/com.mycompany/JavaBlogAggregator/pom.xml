@@ -9,6 +9,8 @@
 	<properties>
 		<org.springframework.version>4.0.2.RELEASE</org.springframework.version>
 		<apache.tiles>3.0.3</apache.tiles>
+		<spring.security.version>3.2.6.RELEASE</spring.security.version>
+		
 	</properties>
 
 
@@ -42,7 +44,6 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
-			<version>${org.springframework.version}</version>
 		</dependency>
 
 		<!-- Expression Language (depends on spring-core) Define this if you use 
@@ -50,7 +51,6 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-expression</artifactId>
-			<version>${org.springframework.version}</version>
 		</dependency>
 
 		<!-- Bean Factory and JavaBeans utilities (depends on spring-core) Define 
@@ -58,7 +58,6 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-beans</artifactId>
-			<version>${org.springframework.version}</version>
 		</dependency>
 
 		<!-- Aspect Oriented Programming (AOP) Framework (depends on spring-core, 
@@ -66,7 +65,6 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aop</artifactId>
-			<version>${org.springframework.version}</version>
 		</dependency>
 
 		<!-- Application Context (depends on spring-core, spring-expression, spring-aop, 
@@ -75,7 +73,6 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>${org.springframework.version}</version>
 		</dependency>
 
 		<!-- Various Application Context utilities, including EhCache, JavaMail, 
@@ -83,7 +80,6 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context-support</artifactId>
-			<version>${org.springframework.version}</version>
 		</dependency>
 
 		<!-- Transaction Management Abstraction (depends on spring-core, spring-beans, 
@@ -92,7 +88,6 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-tx</artifactId>
-			<version>${org.springframework.version}</version>
 		</dependency>
 
 		<!-- JDBC Data Access Library (depends on spring-core, spring-beans, spring-context, 
@@ -100,7 +95,6 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
-			<version>${org.springframework.version}</version>
 		</dependency>
 
 		<!-- Object-to-Relation-Mapping (ORM) integration with Hibernate, JPA, 
@@ -109,7 +103,6 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-orm</artifactId>
-			<version>${org.springframework.version}</version>
 		</dependency>
 
 		<!-- Object-to-XML Mapping (OXM) abstraction and integration with JAXB, 
@@ -118,7 +111,6 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-oxm</artifactId>
-			<version>${org.springframework.version}</version>
 		</dependency>
 
 		<!-- Web application development utilities applicable to both Servlet and 
@@ -128,7 +120,6 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
-			<version>${org.springframework.version}</version>
 		</dependency>
 
 		<!-- Spring MVC for Servlet Environments (depends on spring-core, spring-beans, 
@@ -137,7 +128,6 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>${org.springframework.version}</version>
 		</dependency>
 
 		<!-- Spring MVC for Portlet Environments (depends on spring-core, spring-beans, 
@@ -146,7 +136,6 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc-portlet</artifactId>
-			<version>${org.springframework.version}</version>
 		</dependency>
 
 		<!-- Support for testing Spring applications with tools such as JUnit and 
@@ -155,7 +144,6 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
-			<version>${org.springframework.version}</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -196,48 +184,53 @@
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-web</artifactId>
-			<version>3.2.6.RELEASE</version>
+			<version>${spring.security.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-config</artifactId>
-			<version>3.2.6.RELEASE</version>
+			<version>${spring.security.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-taglibs</artifactId>
-			<version>3.2.6.RELEASE</version>
+			<version>${spring.security.version}</version>
 		</dependency>
-	
 
-	<dependency>
-		<groupId>org.hibernate</groupId>
-		<artifactId>hibernate-entitymanager</artifactId>
-		<version>5.2.10.Final</version>
-	</dependency>
-	
-	<dependency>
-    <groupId>org.hibernate</groupId>
-    <artifactId>hibernate-validator</artifactId>
-    <version>5.2.0.Final</version>
-</dependency>
-  
 
-	<dependency>
-		<groupId>junit</groupId>
-		<artifactId>junit</artifactId>
-		<version>4.11</version>
-		<scope>test</scope>
-	</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>5.2.10.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>5.2.0.Final</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>9.1-901-1.jdbc4</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>1.4</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
-
-			<plugin>
-				<groupId>org.apache.tomcat.maven</groupId>
-				<artifactId>tomcat7-maven-plugin</artifactId>
-				<version>2.2</version>
-			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -248,11 +241,7 @@
 					<fork>true</fork>
 					<executable>/usr/java/jdk1.8.0_121/bin/javac</executable>
 				</configuration>
-
-
 			</plugin>
-
-
 			<plugin>
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
@@ -261,5 +250,18 @@
 
 		</plugins>
 	</build>
+	<dependencyManagement>
+		<dependencies>
+
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-framework-bom</artifactId>
+				<version>${org.springframework.version}</version>
+				<type>pom</type>
+                <scope>import</scope>
+
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 </project>

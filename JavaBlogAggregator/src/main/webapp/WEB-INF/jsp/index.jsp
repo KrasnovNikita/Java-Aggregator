@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ include file="../layout/taglib.jsp"%>
 
-<h1>Latest news about Java World</h1>
+<h1>Latest news from the world</h1>
 
 <table class="table table-bordered table-striped table-hover">
 		<thead>

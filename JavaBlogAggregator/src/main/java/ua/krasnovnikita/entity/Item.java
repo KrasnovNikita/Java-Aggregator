@@ -10,6 +10,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 
+import org.hibernate.annotations.Type;
+
 @Entity
 public class Item {
 
@@ -21,7 +23,7 @@ public class Item {
 	private String title;
 
 	@Lob
-	// @Type(type = "org.hibernate.type.StringClobType")
+	@Type(type = "org.hibernate.type.StringType")
 	@Column(length = Integer.MAX_VALUE)
 	private String description;
 
