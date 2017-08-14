@@ -1,7 +1,6 @@
 package ua.krasnovnikita.service;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
@@ -12,7 +11,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import ua.krasnovnikita.entity.Blog;
-import ua.krasnovnikita.entity.Item;
 import ua.krasnovnikita.entity.Role;
 import ua.krasnovnikita.entity.User;
 import ua.krasnovnikita.repository.BlogRepository;
@@ -62,19 +60,15 @@ public class InitDBService {
 		firstBlog.setUser(userAdmin);
 		blogRepository.save(firstBlog);
 
-		Item item1 = new Item();
-		item1.setBlog(firstBlog);
-		item1.setTitle("first");
-		item1.setLink("http://football.ua");
-		item1.setPublishedDate(new Date());
-		itemRepository.save(item1);
-
-		Item item2 = new Item();
-		item2.setBlog(firstBlog);
-		item2.setTitle("second");
-		item2.setLink("http://meta.ua");
-		item2.setPublishedDate(new Date());
-		itemRepository.save(item2);
+		/*
+		 * Item item1 = new Item(); item1.setBlog(firstBlog);
+		 * item1.setTitle("first"); item1.setLink("http://football.ua");
+		 * item1.setPublishedDate(new Date()); itemRepository.save(item1);
+		 * 
+		 * Item item2 = new Item(); item2.setBlog(firstBlog);
+		 * item2.setTitle("second"); item2.setLink("http://meta.ua");
+		 * item2.setPublishedDate(new Date()); itemRepository.save(item2);
+		 */
 
 	}
 
