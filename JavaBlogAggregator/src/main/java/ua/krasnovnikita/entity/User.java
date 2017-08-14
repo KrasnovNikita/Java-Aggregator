@@ -3,6 +3,7 @@ package ua.krasnovnikita.entity;
 import java.util.List;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -12,6 +13,8 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.Email;
 
+import ua.krasnovnikita.annotation.UniqueUserName;
+
 @Entity
 public class User {
 	@Id
@@ -19,6 +22,8 @@ public class User {
 	private Integer id;
 
 	@Size(min = 3, message = "Name must be more than 3 characters!")
+	@Column(unique = true)
+	@UniqueUserName(message = "Such user already exist!")
 	private String name;
 
 	private boolean enabled;

@@ -1,9 +1,11 @@
 /home/nikitakrasnov/git/Java-Aggregator/JavaBlogAggregator/src/main/java/ua/krasnovnikita/repository/BlogRepository.java
+/home/nikitakrasnov/git/Java-Aggregator/JavaBlogAggregator/src/main/java/ua/krasnovnikita/annotation/UniqueUserNameValidator.java
 /home/nikitakrasnov/git/Java-Aggregator/JavaBlogAggregator/src/main/java/ua/krasnovnikita/controller/AdminController.java
 /home/nikitakrasnov/git/Java-Aggregator/JavaBlogAggregator/src/main/java/ua/krasnovnikita/controller/RegisterController.java
 /home/nikitakrasnov/git/Java-Aggregator/JavaBlogAggregator/src/main/java/ua/krasnovnikita/entity/Blog.java
 /home/nikitakrasnov/git/Java-Aggregator/JavaBlogAggregator/src/main/java/ua/krasnovnikita/entity/Item.java
 /home/nikitakrasnov/git/Java-Aggregator/JavaBlogAggregator/src/main/java/ua/krasnovnikita/service/InitDBService.java
+/home/nikitakrasnov/git/Java-Aggregator/JavaBlogAggregator/src/main/java/ua/krasnovnikita/annotation/UniqueUserName.java
 /home/nikitakrasnov/git/Java-Aggregator/JavaBlogAggregator/src/main/java/ua/krasnovnikita/service/UserService.java
 /home/nikitakrasnov/git/Java-Aggregator/JavaBlogAggregator/src/main/java/ua/krasnovnikita/controller/IndexController.java
 /home/nikitakrasnov/git/Java-Aggregator/JavaBlogAggregator/src/main/java/ua/krasnovnikita/controller/LoginController.java
