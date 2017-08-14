@@ -59,7 +59,16 @@
 		   rules: {
 			   name: {
 				   required: true,
-				   minlength: 3
+				   minlength: 3,
+				   remote: {
+					   url: "<spring:url value='/register/avaliable.html'/>",
+					   type: "get",
+					   data: {
+						   userName:function(){
+							   return $("#name").val();
+						   }
+					   }
+				   }
 			   },
 			   email: {
 				   required: true,
@@ -84,6 +93,11 @@
 		   
 		   unhighlight: function(element) {
 			   $(element).closest('.form-group').removeClass('has-error').addClass('has-success');
+		   },
+		   messages: {
+			   name: {
+				   remote: "Such user name already exists!"
+			   }
 		   }
 		   
 	   });
