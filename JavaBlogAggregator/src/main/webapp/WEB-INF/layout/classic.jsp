@@ -67,12 +67,13 @@
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
       </nav>
-     </div>
+  
 	<tiles:insertAttribute name="body" />
 	<br>
 	<br>
 	<center>
 		<tiles:insertAttribute name="footer" />
 	</center>
+	   </div>
 </body>
 </html>
